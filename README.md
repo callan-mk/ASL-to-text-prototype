@@ -31,7 +31,7 @@ Files needed:
 6.	ASL_datasubset
 7.	ASL_evalsubset  
 
-To train a new model:
+To train a new model:  
 1.	Open easy_train.py
 2.	In console, navigate to project directory.
 3. 	Enter run_model()
@@ -39,14 +39,14 @@ To train a new model:
 
 The given model can be tested using easy_classify_larger.py, easy_evaluate_larger.py, and easy_classify_webcam.py  
 
-For easy_classify_larger.py:
-1.	Specify directory image to be tested on.
-		Ex: x = to_dir('ASL_datasubset/C/C107.jpg')
-2.	Get model’s prediction for the specified image.
-		Ex: predict_this(x)
-For easy_evaluate_larger.py:
-	run eval_model()
-For easy_classify_webcam.py:
+For easy_classify_larger.py:  
+1.	Specify directory image to be tested on.  
+		Ex: x = to_dir('ASL_datasubset/C/C107.jpg')  
+2.	Get model’s prediction for the specified image.  
+		Ex: predict_this(x)  
+For easy_evaluate_larger.py:  
+	run eval_model()  
+For easy_classify_webcam.py:  
 1.	Make sure the computer on which the program is running has a webcam and is running Windows, as this functionality may be OS dependent.
 2.	Enter run_interpreter()
 3.	A window with the name “Webcam” should open automatically.

@@ -13,8 +13,8 @@ In easy_train, I used the Keras ImageDataGenerator functionality to import image
 ## Results and Conclusions
 Most of the time I spent on this project was on experimenting with Keras and InceptionV3, in order to get the model I was building to work in any capacity. It took quite a while to discover that InceptionV3 is not a sequential model, at which point I had to learn the Keras functional API, mostly by trial and error from the documentation’s limited instruction. By the time I was able to get a model working in any capacity, I only had time to do very limited testing of the resulting models.  
 Two versions of the programs for this project exist, one set which runs on images of size 150 x 150, and one on images of size 299 x 299. Most of my limited testing focused on comparing the performance of the models running on the two different size images. I randomly sampled the original subdirectories of 3000 images to create an evaluation set, different from the set used for training and validation, of 500 image subdirectories. Using the evaluate_generator method with a batch size of 100 images and 50 steps, I found that the results [loss, accuracy] were as follow when evaluating on the specified models:  
-> ASLID_small4: [5.241470546722412, 0.432799996137619]  
-> ASLID_large3: [2.327937116622925, 0.5425999957323074]  
+	> ASLID_small4: [5.241470546722412, 0.432799996137619]  
+	> ASLID_large3: [2.327937116622925, 0.5425999957323074]  
 This clearly shows that the model using larger images functions significantly better overall, and so this model is the one used to process webcam image input.   
 If time permitted, I would have added alternate versions of several of the classes, to account for the fact that some letters can be correctly signed in multiple ways, and the dataset I used only accounts for one way for each letter. Additionally, I would have formatted the file output from easy_classify_webcam such that subsequent letters print on the same line, and input recognized as the “del” sign would delete the last printed character. I also would have added a sign to indicate a new line of text.  
   
@@ -46,7 +46,7 @@ For easy_classify_larger.py:
 		Ex: predict_this(x)  
 		
 For easy_evaluate_larger.py:  
-	run eval_model()  
+1.	run eval_model()  
 	
 For easy_classify_webcam.py:  
 1.	Make sure the computer on which the program is running has a webcam and is running Windows, as this functionality may be OS dependent.

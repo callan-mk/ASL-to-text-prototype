@@ -28,7 +28,6 @@ Files needed:
 2.	easy_classify_larger.py
 3.	easy_evaluate_larger.py
 4.	easy_classify_webcam.py
-5.	ASLID_large3.model
 6.	ASL_datasubset
 7.	ASL_evalsubset  
 
